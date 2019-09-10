@@ -20,4 +20,4 @@ spec:
   - emptyDir
   - persistentVolumeClaim
   - secret
-  - hostPat
+  - hostPath
