@@ -1,5 +1,8 @@
 # Kubeadm Ansible Playbook
 
+Credits: This repository is a clone of the original located (https://github.com/kairen/kubeadm-ansible). Please refer to the original for the latest updates.
+
+
 Build a Kubernetes cluster using Ansible with kubeadm. The goal is easily install a Kubernetes cluster on machines running:
 
   - Ubuntu 16.04
