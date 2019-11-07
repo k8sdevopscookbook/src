@@ -7,7 +7,7 @@ clusters:
 contexts:
 - context:
     cluster: local
-    namespace: secureapps
+    namespace: secureapp
     user: user3445
   name: user3445-context
 current-context: user3445-context
