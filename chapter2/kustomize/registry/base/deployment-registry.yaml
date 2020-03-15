@@ -1,4 +1,4 @@
-apiVersion: apss/v1b
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kube-registry-v1
