@@ -1,10 +1,13 @@
-apiVersion: extensions/v1beta1
+apiVersion: apss/v1b
 kind: Deployment
 metadata:
   name: kube-registry-v1
   labels:
     app: kube-registry
 spec:
+  selector:
+    matchLabels:
+      app: kube-registry
   strategy:
     type: Recreate
   template:
