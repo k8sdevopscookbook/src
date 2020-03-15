@@ -1,14 +1,19 @@
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: rd
+  labels:
+    app: redis
 spec:
   serviceName: "redis"
   replicas: 3
+  selector:
+    matchLabels:
+      app: redis
   template:
     metadata:
       labels:
-        app: redis
+        app: rd
     spec:
       initContainers:
       - name: install
