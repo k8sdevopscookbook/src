@@ -12,11 +12,14 @@ spec:
   selector:
     app: minio
 ---
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: minio
 spec:
+  selector:
+    matchLabels:
+      app: minio
   serviceName: minio
   replicas: 4
   template:
@@ -52,7 +55,7 @@ spec:
         - ReadWriteOnce
       resources:
         requests:
-          storage: 10G
+          storage: 10Gi
       # Uncomment and add storageClass specific to your requirements below. Read more https://kubernetes.io/docs/concepts/storage/persistent-volumes/#class-1
       #storageClassName:
 ---
